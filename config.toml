@@ -1,0 +1,27 @@
+## Global backup exporter configuration
+# Uncomment and change these values if you need to run on different http port / path
+#port = 8080
+#path = '/metrics'
+
+## Repositories 
+# Uncomment and configure repositories as needed.
+# You can have multiple entries for each supported repo.
+#[[restic]]
+#  alias = 'test1'
+#  path = 'tmp/restic'
+#  password = 'test'
+
+#[[restic]]
+#  alias = 'test2'
+#  path = 'tmp/restic'
+#  password = 'test'  
+
+#[tarball]
+#  alias = 'myLocalDirBackup'
+#  path = '/backups'
+#  extension = '.tar.gz'
+
+#[elasticsearch]
+#  alias = 'myBackupRepo2'
+#  url = 'http://localhost:9200/'
+#  repo = 'my_backup'

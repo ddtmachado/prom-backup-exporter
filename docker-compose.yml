@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  backup:
+    image: backup-exporter:local
+    container_name: backup-exporter
+    ports:
+      - "9113:8080"
